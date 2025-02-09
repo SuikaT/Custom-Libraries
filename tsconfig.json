@@ -4,7 +4,7 @@
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
     "paths": {
-      "drag-and-drop": ["./dist/drag-and-drop"],
+      "ngx-custom-table": ["./dist/ngx-custom-table"],
       "ngx-dnd": ["./dist/ngx-dnd"]
     },
     "forceConsistentCasingInFileNames": true,
