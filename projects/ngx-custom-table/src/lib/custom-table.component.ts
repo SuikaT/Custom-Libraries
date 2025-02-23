@@ -8,7 +8,6 @@ import { Component, Input } from "@angular/core";
 	styleUrl: "custom-table.component.scss",
 })
 export class CustomTableComponent {
-    
 	@Input()
 	columnTitles: string[];
 }
