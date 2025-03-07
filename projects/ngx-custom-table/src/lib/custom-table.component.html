@@ -1,2 +1,18 @@
-<p>TABLE</p>
- 
+<table>
+    <thead>
+        <tr>
+            @for (field of displayedFields; track field) {
+                <th scope="col">{{ columnTitles.has(field) ? columnTitles.get(field) : field }}</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @for (data of datas; track data) {
+            <tr>
+                @for (field of displayedFields; track field) {
+                    <td>{{ data[field] }}</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
