@@ -12,7 +12,7 @@ export class CustomTableComponent {
   columnTitles = new Map<string, string>();
 
   @Input()
-  datas: unknown[];
+  datas: any[];
 
   @Input()
   displayedFields: string[];
