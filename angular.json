@@ -68,6 +68,39 @@
           }
         }
       }
+    },
+    "suikility": {
+      "projectType": "library",
+      "root": "projects/suikility",
+      "sourceRoot": "projects/suikility/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/suikility/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/suikility/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/suikility/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/suikility/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }

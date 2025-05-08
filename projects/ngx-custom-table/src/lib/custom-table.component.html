@@ -10,7 +10,11 @@
         @for (data of datas; track data) {
             <tr>
                 @for (field of displayedFields; track field) {
-                    <td>{{ data[field] }}</td>
+                    @if (isDate(data[field])) {
+                        <td>{{ data[field] | formatDate }}</td>
+                    } @else {
+                        <td>{{ data[field] }}</td>
+                    }
                 }
             </tr>
         }

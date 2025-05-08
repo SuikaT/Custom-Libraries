@@ -3,10 +3,10 @@
     {
       "files": "*.html",
       "options": {
-        "parser": "angular",
-        "tabWidth": 4,
-        "printWidth": 300
+        "parser": "angular"
       }
     }
-  ]
+  ],
+  "tabWidth": 4,
+  "printWidth": 180
 }

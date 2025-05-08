@@ -5,7 +5,12 @@
     "outDir": "./dist/out-tsc",
     "paths": {
       "ngx-custom-table": ["./dist/ngx-custom-table"],
-      "ngx-dnd": ["./dist/ngx-dnd"]
+      "ngx-dnd": [
+        "./dist/ngx-dnd"
+      ],
+      "suikility": [
+        "./dist/suikility"
+      ]
     },
     "forceConsistentCasingInFileNames": true,
     "strict": false,
