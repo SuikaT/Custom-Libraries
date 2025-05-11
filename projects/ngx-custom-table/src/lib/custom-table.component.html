@@ -2,7 +2,7 @@
     <thead>
         <tr>
             @for (field of displayedFields; track field) {
-                <th scope="col">{{ columnTitles.has(field) ? columnTitles.get(field) : field }}</th>
+                <th scope="col" [class]="'column-' + field">{{ columnTitles.has(field) ? columnTitles.get(field) : field }}</th>
             }
         </tr>
     </thead>
