@@ -8,6 +8,9 @@
       "ngx-dnd": [
         "./dist/ngx-dnd"
       ],
+      "suik-ui": [
+        "./dist/suik-ui"
+      ],
       "suikility": [
         "./dist/suikility"
       ]
