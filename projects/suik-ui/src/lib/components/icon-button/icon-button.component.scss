@@ -1,0 +1,18 @@
+.icon {
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+mat-icon {
+    font-size: inherit; // to be able to set font-size from outside the component
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

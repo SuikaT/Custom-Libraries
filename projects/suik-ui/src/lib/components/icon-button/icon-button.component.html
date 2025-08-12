@@ -1,3 +1,4 @@
 <button>
-    <mat-icon>home</mat-icon>
+    <mat-icon [ngClass]="{ icon: !disabled, disabled: disabled }" [testKeyDir]="testKeyDir"
+        (click)="onClick($event)"></mat-icon>
 </button>
