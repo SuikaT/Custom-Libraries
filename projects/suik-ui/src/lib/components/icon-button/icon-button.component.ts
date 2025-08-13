@@ -1,9 +1,11 @@
-import { Component } from "@angular/core";
-import { MatIconModule } from "@angular/material/icon";
+import { CommonModule } from "@angular/common";
+import { Component, Input } from "@angular/core";
+import { MatIcon } from "@angular/material/icon";
+import { MatIconButton } from "@angular/material/button";
 
 @Component({
     selector: "suikui-icon-button",
-    imports: [CommonModule, MatIconModule],
+    imports: [CommonModule, MatIcon, MatIconButton],
     templateUrl: "./icon-button.component.html",
     styleUrl: "./icon-button.component.scss",
     standalone: true,
