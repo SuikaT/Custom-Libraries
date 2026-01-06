@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from "@angular/core";
-import { formatDate } from "suikility";
+import { formatDate } from "../dateUtils/dateUtils";
 
 @Pipe({
     name: "formatDate",
